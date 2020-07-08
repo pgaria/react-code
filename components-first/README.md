@@ -13,7 +13,7 @@ React Props(Properties) Systsem (Passing values from App to Child Component)
 Component ReUse by passing the component as a chiled in the Property.
 
 ## Final Result
-![final Result by the project](./public/final-result.png)   
+![final Result by the project](./public/final-result.PNG)   
 
 
 ## Available Scripts

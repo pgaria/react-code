@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SeasonView from './SeasonView';
 
 // // React Class Based component  => Print and use the Geolocation API to Get the Position.
 // With a render() method and Extending the Class to React.component class.
 class App extends React.Component {
+    //Removed the Constructor
 
-    //In React the constructor needs to be called its not a default lie java ScriptProcessorNode.
-    constructor(props) {
-        super(props);
-        console.log("In constructor");
-        // Create 2 states Lat and error messages and fill at run time.
-        this.state = { lat: null, errorMessage: null };
-    }
-    
+    // Create 2 states Lat and error messages and fill at run time. Babel is anyways creating the constructor for us while compiling.
+    // and initilizign the State for Us below.
+    state = { lat: null, errorMessage: null };
+
     // Now Loading the Data in this method and removed from Constructor.
     //Calls for the Render method after that.
     componentDidMount(){
@@ -41,7 +39,7 @@ class App extends React.Component {
            return <div> Error: {this.state.errorMessage} </div>;
        }    
        if(!this.state.errorMessage && this.state.lat){
-           return <div> Latitude: {this.state.lat}</div>;
+           return <SeasonView lat={this.state.lat}/>;
        }
        return <div>Loading</div>;
     }

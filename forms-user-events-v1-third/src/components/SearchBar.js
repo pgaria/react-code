@@ -7,10 +7,12 @@ class SearchBar extends React.Component {
      
     //As Form by Default If Clicked Refresh the page which we do not want after eriting our Text in SearchBar.
     //So we Have to Prevent the Default Behaviour by making this custome method and call in Form Tag.
-    onFormSubmit(event){
+    onFormSubmit= (event) => {
      event.preventDefault();
+     // So now make the CallBack we have created in the App.js as a props and pass the Usertext.
+     this.props.onSubmitByUser(this.state.userText)
     }
-    
+
     // Method no need to create in the onChange Event and can be Directly used with => expression.
     //Now we change and set the State in the controlled Elemenets as the Value is Stored by the Rect Componment not the HTML DOM.
     render() {

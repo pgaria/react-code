@@ -15,29 +15,14 @@ Learn about User Events and Fetching Lists with multiple React component.
 
 ## Steps:
 
-### Getting the Location of the user from Browser??
-In Our Index.js we are going to create a JavaScript Class with following :
+### SearchBar
+Create a Simple Text Field Based searchBar Component.
+Now in the Form there is a Text field which takes the Values from User.
+We have to now use State and store this Value in the React State.
+When User press Enter button the Default Fucntionality of Form will Refresh the Page. To prevent this Page reload we have to Use preventDefault() method on Form Submit Event.
+Now we have a Text Field Which Takes Value and the Value can be Stored and retrieved.
 
-1.State : with Latitude and Error message
 
-2.Implement componentDidMount() method of Life Cycle and Do the Data Loading Part and get the Latitude usign following API
-using API : https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
-Imp : In the method above we use the setState({object}) method to set the state and then the render method clalled everytime.
-
-3.Create a Render() method which is a must for the Class Components in React. Return a JSX based on the Season Logic.
-
-### Getting the Date and Month??
-We create a funcational Component SessionView which receives the Season is a property from our App Class.
-In the Logic we can get the month using Java Script method : new Date().getMonth()
-
-### Create the logic based on the month and Location then fill the component??
-Create seasonConfig which stores the Configuration data About the  Icon CSS Class and the Text Message to Display.
-
-SeasonView Component then Return a nice JSX based on the Logic for Winters or Summers season.
-
-## CSS StyleSheet Reference
-Using the https://semantic-ui.com for the CSS styleSheet.
-https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
 
 
 ## Final Result

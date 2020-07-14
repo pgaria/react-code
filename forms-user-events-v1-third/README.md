@@ -22,6 +22,10 @@ We have to now use State and store this Value in the React State.
 When User press Enter button the Default Fucntionality of Form will Refresh the Page. To prevent this Page reload we have to Use preventDefault() method on Form Submit Event.
 Now we have a Text Field Which Takes Value and the Value can be Stored and retrieved.
 
+### Api Request
+Using https://unsplash.com/ to get the Images over the API.
+Using the Ajax client for the Api as React has nothign to do with API calls.
+Axios (https://github.com/axios/axios) as 3rd party library for the netwok request related functions using `npm install --save axios`
 
 
 

@@ -27,10 +27,13 @@ Using https://unsplash.com/ to get the Images over the API.
 Using the Ajax client for the Api as React has nothign to do with API calls.
 Axios (https://github.com/axios/axios) as 3rd party library for the netwok request related functions using `npm install --save axios`
 
+### Image List Component
+We will create a new component just to take the Images list from the response.
+Get the Urls and Display the Images on the Browser.
 
 
 ## Final Result
-Give Permission on the Browser Or you will see the loading Component.
+Our Final solution for Showing the Images based on the Search is Ready
 
 ![final Result by the project](./public/final-result.PNG)   
 
